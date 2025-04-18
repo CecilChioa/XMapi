@@ -33,7 +33,7 @@ config:
       -
         title: 开箱即用
         icon: 🚀
-        details: 一键安装、更新，省去复制配置的烦恼
+        details: 一键安装、更新，省去复杂配置的烦恼
       -
         title: 多平台
         icon: ⚖

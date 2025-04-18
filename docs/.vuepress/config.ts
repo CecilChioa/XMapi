@@ -35,7 +35,7 @@ export default defineUserConfig({
     },
 
     /* 文档仓库配置，用于 editLink */
-    docsRepo: 'https://github.com/xmapi/xmapi',
+    docsRepo: 'https://github.com/xmapi/',
     docsDir: 'docs',
     docsBranch: 'main',
 
