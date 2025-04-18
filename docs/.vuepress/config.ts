@@ -30,34 +30,34 @@ export default defineUserConfig({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     hostname: 'https://xm.war3.xyz',
     footer: {
-      copyright: 'Copyright © 2025-present 睡不醒',
+      // copyright: 'Copyright © 2025-present 睡不醒',
       message: 'Power by XM 懒虫',
     },
 
     /* 文档仓库配置，用于 editLink */
-    // docsRepo: '',
-    // docsDir: 'docs',
-    // docsBranch: '',
+    docsRepo: 'https://github.com/xmapi/xmapi',
+    docsDir: 'docs',
+    docsBranch: 'main',
 
     /* 页内信息 */
-    // editLink: true,
-    // lastUpdated: true,
-    // contributors: true,
-    // changelog: false,
+    editLink: true,
+    lastUpdated: false,
+    contributors: true,
+    changelog: false,
 
     /**
      * 博客
      * @see https://theme-plume.vuejs.press/config/basic/#blog
      */
     // blog: false, // 禁用博客
-    // blog: {
-    //   postList: true, // 是否启用文章列表页
-    //   tags: true, // 是否启用标签页
-    //   archives: true, // 是否启用归档页
-    //   categories: true, // 是否启用分类页
-    //   postCover: 'right', // 文章封面位置
-    //   pagination: 15, // 每页显示文章数量
-    // },
+    blog: {
+      postList: true, // 是否启用文章列表页
+      tags: true, // 是否启用标签页
+      archives: false, // 是否启用归档页
+      categories: false, // 是否启用分类页
+      postCover: 'right', // 文章封面位置
+      pagination: 15, // 每页显示文章数量
+    },
 
     /* 博客文章页面链接前缀 */
     article: '/article/',
@@ -73,9 +73,9 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/config/basic/#autofrontmatter
      */
     autoFrontmatter: {
-      permalink: false,  // 是否生成永久链接
+      permalink: true,  // 是否生成永久链接
       createTime: false, // 是否生成创建时间
-      title: false,      // 是否生成标题
+      title: true,      // 是否生成标题
     },
 
     /* 本地搜索, 默认启用 */
@@ -104,7 +104,7 @@ export default defineUserConfig({
     // },
 
     /* 文章字数统计、阅读时间，设置为 false 则禁用 */
-    // readingTime: true,
+    readingTime: false,
 
     /**
       * markdown
